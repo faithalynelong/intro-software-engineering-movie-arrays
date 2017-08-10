@@ -11,4 +11,28 @@
 # This method should use puts to print out "You will watch <movie name>" for every movie in the list
 #This method should accept an array as an argument (the movie queue)
 
+# movies = ["Trainwreck", "Inside Out", "Silver Linings Playbook", "Pitch Perfect 2", "Hot Pursuit"]
+def first_movie(films)
+    
+    return films[0]
+end
 
+# first_movies(movies)
+
+def watch_movie(movies)
+    
+    movies.delete("Minions")
+    return movies
+end
+ 
+def update_queue(movies, show)
+     
+    movies.insert(-1, show)
+    return movies
+end
+
+def view_queue(movies)
+    movies.each do |i|
+    puts "You will watch #{i}"
+    end
+end
